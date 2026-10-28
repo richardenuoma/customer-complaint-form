@@ -1,0 +1,73 @@
+:root{
+    --approved: #059605;
+    --approvedHighlight: #dff8df;
+    --disapproved: red;
+    --disapprovedHighlight: 
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+h1 {
+    text-align: center;
+}
+
+#form {
+    max-width: 70%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+}
+
+input {
+    border: none;
+    border-bottom: 1.5px solid black;
+    outline: none;
+}
+
+#personal-info input, #product-info input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+fieldset {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-color: rgb(118, 118, 118);
+}
+
+textarea {
+    width: 100%;
+    border-color: rgb(118, 118, 118);
+    
+}
+
+#btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#submit-btn, #clear-btn {
+    margin: 10px 15px 0;
+}
+
+/* Hiden Fieldsets */
+/* Optimizing the use of styling */
+.hide{
+    display: none; 
+}
+
+.approved{
+    border: 1.5px solid var(--approved);
+    background-color: var(--approvedHighlight); 
+}
+
+.disapproved{
+    border: 1.5px solid var(--disapproved);
+    background-color: var(--disapprovedHighlight);
+}
